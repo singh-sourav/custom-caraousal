@@ -24,6 +24,11 @@ function renderCarousal(container, arrayOfImages) {
       "app"
     ).style.transform = `translate3d(-${offset}%,0,0)`;
   }
+  
+  //have your left and right controls here
+  function renderControls() {
+   //Create and Render left and right controls if needed
+  }
 }
 
 //call renderCaraousal() with container and arrayOfImages
@@ -34,5 +39,4 @@ renderCarousal(document.getElementById("app"), [
   "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1200/https://blog.snappa.com/wp-content/uploads/2018/01/tamara-knight-photography-facebook-cover.png"
 ]);
 
-//have your left and right controls here
-function renderControls() {}
+
