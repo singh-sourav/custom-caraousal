@@ -1,4 +1,6 @@
+
 // function accepts the arrayOfImages and builds a caraousal
+
 function renderCarousal(container, arrayOfImages) {
   container.style.width = `${arrayOfImages.length * 100}%`;
   arrayOfImages.forEach(element => {
@@ -14,7 +16,7 @@ function renderCarousal(container, arrayOfImages) {
   offset = 0;
   //start the slideshow
   setInterval(() => slideImage(arrayOfImages.length), 3000);
-
+  
   function slideImage(noOfImages) {
     rate = 100 / noOfImages;
     offset = (offset + rate) % 100;
@@ -32,4 +34,5 @@ renderCarousal(document.getElementById("app"), [
   "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1200/https://blog.snappa.com/wp-content/uploads/2018/01/tamara-knight-photography-facebook-cover.png"
 ]);
 
+//have your left and right controls here
 function renderControls() {}
