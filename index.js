@@ -5,7 +5,6 @@ function renderCarousal(container, arrayOfImages) {
   container.style.width = `${arrayOfImages.length * 100}%`;
   arrayOfImages.forEach(element => {
     const imageContainer = document.createElement("div");
-    imageContainer.id = "imageBox";
     imageContainer.style.width = "100%";
     let image = document.createElement("img");
     image.src = element;
